@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string name="start">Start</string>
+    <string name="welcome_to_the_dice_roller">Welcome to the Dice Roller</string>
+    <string name="todo">TODO</string>
+
+</resources>
