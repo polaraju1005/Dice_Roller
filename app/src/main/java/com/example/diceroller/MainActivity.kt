@@ -1,7 +1,6 @@
 package com.example.diceroller
 
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -10,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.roll_page)
+
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val rollButton: Button = findViewById(R.id.button)
@@ -22,17 +22,10 @@ class MainActivity : AppCompatActivity() {
         rollDice()
     }
 
-    override fun onContextItemSelected(item: MenuItem): Boolean
-    {
-        when(item.itemId){
-            android.R.id.home->{
-                finish()
-                return true
-            }
-        }
-        return super.onContextItemSelected(item)
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
-
     private fun rollDice() {
         val dice = Dice(6)
         val diceRoll = dice.roll()

@@ -4,6 +4,7 @@
     <string name="todo">TODO</string>
     <string name="start">Start</string>
     <string name="welcome_to_the_dice_roller">Welcome to the Dice Roller</string>
-    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="roll">Roll</string>
 
 </resources>
